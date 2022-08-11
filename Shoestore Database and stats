@@ -1,0 +1,22 @@
+create table shoes (id integer primary key,
+gender text, color text, shoestyle text, price text, size text);
+
+Insert into shoes values (1,'M','Black','Running Shoe','60','8');
+Insert into shoes values (2,'M','Brown','Outdoor','100','12');
+Insert into shoes values (3,'M','Red','Atheltic','120','10');
+Insert into shoes values (4,'M','Grey','Soccer shoe','90','10');
+Insert into shoes values (5,'F','Pink','Dress','110','6');
+Insert into shoes values (6,'F','Purple','Running Shoe','50','4');
+Insert into shoes values (7,'F','Blue','Casual','75','7');
+Insert into shoes values (8,'F','Black','Slipper','35','5');
+Insert into shoes values (9,'F','Orange','Softball Shoe','150','6');
+Insert into shoes values (10,'F','Red','Volleyball Shoe','200','8');
+Insert into shoes values (11,'M','Green','Football shoe','115','14');
+Insert into shoes values (12,'M','Yellow','Baseball shoe','95','7');
+Insert into shoes values (13,'M','White','Casual','55','9.5');
+Insert into shoes values (14,'M','Blue','Sandals','25','11');
+Insert into shoes values (15,'M','Grey','Flip Flops','45','10');
+
+SELECT* from shoes order by price;
+
+SELECT shoestyle,sum(price) from shoes group by shoestyle;
